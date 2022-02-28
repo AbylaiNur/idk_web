@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
+        <div class="container p-2">
+            <a href="index.html" class="navbar-brand">idk_web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto text-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item ms-4">
+                        <a href="tours.html" class="nav-link">Our tours</a>
+                    </li>
+                    <li class="nav-item ms-4">
+                        <a href="contact-us.html" class="nav-link active">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="my-5">
+        <div class="container">
+            <h1>press enter</h1>
+            <div id="contact-tag" class="display-3 text-secondary text-center border-bottom pb-3 mb-3" style="font-weight: bold;">
+                Contact
+            </div>
+            <p class="text-center text-secondary">For all enquiries, please email us using the form below</p>
+        </div>
+    </section>
+    <section class="mb-5 pb-5">
+        <div class="container">
+            <h2 class="mb-3">Please write here</h2>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="mb-3">
+                                <label for="FormName" class="form-label text-secondary">First Name</label>
+                                <input type="email" class="form-control" id="FromName" placeholder="Eren">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="mb-3">
+                                <label for="FormName" class="form-label text-secondary">Sure Name</label>
+                                <input type="email" class="form-control" id="FromName" placeholder="Yeger">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="FormEmail" class="form-label text-secondary">Email address</label>
+                        <input type="email" class="form-control" id="FromEmail" placeholder="eren.yeger@gmail.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="FormCardNumer" class="form-label text-secondary">Card number</label>
+                        <input type="email" class="form-control" id="FormCardNumer" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="mb-3">
+                                <label for="FormExpirationDate" class="form-label text-secondary">Expiration Date</label>
+                                <input type="email" class="form-control" id="FormExpirationDate" placeholder="12/24">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="mb-4">
+                                <label for="FormCVC" class="form-label text-secondary">CVC</label>
+                                <input type="email" class="form-control" id="FormCVC" placeholder="111">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="mb-3">
+                        <label for="FormMessage" class="form-label text-secondary">What you need</label>
+                        <textarea class="form-control" id="FormMessage" rows="11" placeholder="I don't know how to draw up documents to get to Marley."></textarea>
+                    </div>
+                </div>
+            </div>
+            <button id="scam-button" class="btn btn-lg btn-outline-primary">Send your info</button>
+        </div>
+    </section>
+    <footer class="bg-dark text-white text-center" style="margin-top: auto;">
+        <p class="p-5 text-muted">Built for the project in Front End course of AITU by Abylai Nurske</p>
+    </footer>
+
+    <script>
+        document.getElementById("contact-tag").addEventListener(("mouseover"), function(event) {
+            alert("hmm");
+        });
+        document.getElementById("scam-button").addEventListener(("click"), function(event) {
+            alert('Your money is stolen :)');
+        });
+        document.getElementById("scam-button").addEventListener(("keypress"), function(event) {
+            if (event.key == 'f') {
+                alert('Your money is stolen :)');
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
+    <script src="index.js" charcet="UTF-8"></script>
+</body>
